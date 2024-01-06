@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fundo2">
+
+    <TextView
+        android:id="@+id/txtdesconto"
+        android:layout_width="214dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/txtDesconto"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtpreco"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="117dp"
+        android:text="@string/txtPreço"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desconto" />
+
+    <EditText
+        android:id="@+id/desconto"
+        android:layout_width="276dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="@string/txtDesconto"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdesconto" />
+
+    <EditText
+        android:id="@+id/preco"
+        android:layout_width="277dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="132dp"
+        android:ems="10"
+        android:textAlignment="center"
+        android:hint="@string/txtPreço"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpreco" />
+
+    <Button
+        android:id="@+id/btnDesconto"
+        android:layout_width="197dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="175dp"
+        android:text="@string/button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

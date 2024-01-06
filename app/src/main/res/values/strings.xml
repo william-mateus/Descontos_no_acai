@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Desconto Do Açai</string>
+    <string name="txtDesconto">Digite o Desconto desejado</string>
+    <string name="hintPreço">Digite o Desconto </string>
+    <string name="txtPreço">Digite o Preço</string>
+    <string name="button">Desconto</string>
+</resources>
